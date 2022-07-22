@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--header-->
@@ -30,26 +30,21 @@
                     </ul>
              </nav>
              <ul class="contact list">
-                <li> 
-                   <a class="contact-email link" href="mailto:info@example.com">info@example.com</a>
+                <li class="contact-item"> 
+                   <a class="contact-item link" href="mailto:info@example.com">info@example.com</a>
                 </li>
-                <li>
-                    <a class="contact-phone-number link" href="tel:+380991111111">+38 096 111 11 11</a>
+                <li class="contact-item">
+                    <a class="contact-item link" href="tel:+380991111111">+38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
-    </header>
-    
+    </header>    
 
      <!-- portfolio -->
 
-    <section>
+    <section class="portfolio-section">
 <div class="container">
-    
-   <div class="work-type-section">
-
-    <h1" class="heading">Виды роботы</h1>
-        
+    <h1" class="heading">Виды роботы</h1>        
     <ul class="work-type list">
         <li class="work-type-item">
             <button class="button" type="button">Все</button>
@@ -67,8 +62,6 @@
             <button class="button" type="button">Маркетинг</button>
         </li>
     </ul>
-
-   </div>
 
     <div class="work-example-section">
         <h2 class="caption">примеры робот</h2>
@@ -118,7 +111,7 @@
             </li>
             <li class="work-example-item">
                 <img class="work-example-item-photo"  src="./images/img-portfolio/img7.jpg" alt="" width: 370px;>
-                <div >
+                <div class="work-example-descr">
                     <h3 class="suptitle-portfolio">Издание Limited Edition</h3>
                     <p class="description">Дизайн</p>
                 </div>
@@ -149,11 +142,11 @@
           <a href="" lang="en" class="footer-logo link"><span class="logo-web">Web</span>Studio</a>
           <address class="address">
               <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
-              <ul class="contact list">
-                  <li class="contact-item"> 
+              <ul class="contact-footer list">
+                  <li class="contact-item-footer"> 
                      <a class="contact-email-footer  link" href="mailto:info@example.com">info@example.com</a>
                   </li>
-                  <li class="contact-item">
+                  <li class="contact-item-footer">
                       <a class="contact-phone-footer link" href="tel:+380991111111">+38 096 111 11 11</a>
                   </li>
               </ul>
