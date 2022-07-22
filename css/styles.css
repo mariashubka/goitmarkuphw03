@@ -139,16 +139,8 @@ color: var(--secondary-text-color);
   color: var(--accent-color);
 }
  
-.contact-email {
-font-size: 14px;
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.02em;
-margin-right: 50px;
-color: var(--primary-text-color);
-}
 
-.contact-phone-number {
+.contact-item {
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
@@ -156,12 +148,14 @@ letter-spacing: 0.02em;
 color: var(--primary-text-color)
 }
 
-.contact-email:hover,.contact-email:focus {
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-item :hover,.contact-item :focus {
 color: var(--accent-color);
 }
-.contact-phone-number:hover,.contact-phone-number:focus {
-color: var(--accent-color);
-}
+
 /* ================  HEADER  ================ */
 
 
@@ -238,8 +232,6 @@ display: none;
 /* ==============  ABOUT ============ */
 
 .about {
-  padding-left: 215px;
-  padding-right: 215px;
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -273,10 +265,7 @@ display: none;
   background-color: #F5F4FA;
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-right: 215px;
-  padding-left: 215px;
-
-}
+ }
 
 .team-list {
   display: flex;
@@ -287,10 +276,15 @@ display: none;
   margin-right: 30px;
 }
  
-.team-member {
+.team-list-container {
 margin-bottom: 30px;
-
+margin-top: 50px;
 } 
+
+.team-member-suptitle {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 .team-suptitle {
 text-align: center;
@@ -313,8 +307,6 @@ color: var(--primary-text-color);
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
-  padding-right: 1154px;
 }
 
 .address-text {
@@ -326,10 +318,6 @@ font-style: normal;
 margin-bottom: 9px;
 }
 
-.contact-item {
-  display: flex
-}
-
 .footer-logo {
   font-family: 'Raleway',sans-serif;
   font-weight: 700;
@@ -337,6 +325,7 @@ margin-bottom: 9px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-bottom:  20px;
+  display: block;
   color: var(--white-color)
 }
 
@@ -348,11 +337,9 @@ margin-bottom: 9px;
 
 /* ================ PORTFOLIO ================= */
 
-.work-type-section {
-  padding-top: 100px;
-  padding-bottom: 56px;
-  padding-right: 215px;
-  padding-left: 215px;
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .heading {
@@ -364,7 +351,7 @@ margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-size: 14px;
- line-height: 1.71;
+  line-height: 1.71;
 }
 
 
@@ -378,6 +365,12 @@ margin-bottom: 9px;
     border-radius: 4px;
     cursor: pointer;
     font-family: inherit;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    border: none;
+
 }
 
 .button:hover,.button:focus {
@@ -404,13 +397,12 @@ margin-bottom: 9px;
 
 .work-type {
   display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .work-type-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
 /* work example section */
@@ -427,7 +419,8 @@ margin-bottom: 9px;
 }
 
 .work-example-descr {
-  border-bottom: 1px solid #EEEEEE;
+  border: 1px solid #EEEEEE;
+  border-top: none;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
