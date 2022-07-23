@@ -64,17 +64,6 @@ body {
     color: var(--secondary-text-color);
     }
 
-  .suptitle {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.19;
-      letter-spacing: 0.03em;
-      color: var(--secondary-text-color);
-      text-transform: uppercase;
-      margin-bottom: 10px;
-      }
-    
-
   /* ==================== COMPONENTS ==================== */
 
 
@@ -86,8 +75,9 @@ body {
   }
 
 .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #EEEEEE;
   }
 
   .page-nav {
@@ -226,6 +216,22 @@ padding-top: 10px;
 .caption {
 display: none;
 }
+
+.benefits-item {
+  width: 270px;
+}
+
+.suptitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  }
+
+
 /* ================= BENEFITS ============== */ 
 
 
@@ -233,7 +239,6 @@ display: none;
 
 .about {
   padding-bottom: 94px;
-  padding-top: 94px;
 }
 
 .about-list {
@@ -282,12 +287,18 @@ margin-top: 50px;
 } 
 
 .team-member-suptitle {
-  margin-top: 30px;
-  margin-bottom: 30px;
+padding-top:30px;
+padding-bottom: 30px;
 }
 
 .team-suptitle {
 text-align: center;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--secondary-text-color);
+margin-bottom: 10px;
 }
 
 .desc {
@@ -302,6 +313,7 @@ color: var(--primary-text-color);
 /* ============ TEAM ============= */
 
 /* ===========FOOTER=============== */
+
 
 .footer {
   background-color: #2F303A;
@@ -331,6 +343,10 @@ margin-bottom: 9px;
 
 .logo-web {
   color: var(--accent-color);
+}
+
+.contact-item-footer:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* ===========FOOTER=============== */
